@@ -2,14 +2,40 @@
 <html lang="en">
     <head>
         <title>Login</title>
+     <style>
+       
+       #divContainer {
+            text-align: center;
+        }
+        
+        .redText {
+            color:red;
+            background-color: rgb(0, 166, 255);
+        }
+
+        .redText:hover {
+            color:beige;
+        }
+        
+        #btnLogin {
+            font-size:large;
+            color:aquamarine;
+        }
+
+        #btnLogin:hover {
+            cursor:pointer;
+            font-size: x-large;
+            color: blueviolet;
+        }
     
+     </style>
     </head>
 
     <body> 
-        <div style="text-align: center">
+        <div style="text-align: center" id="divContainer">
             <h1>Login</h1>
-            <input type="text" placeholder="Username" id="txtUsername"> 
-            <input type="text" placeholder="Password" id="txtPassword">
+            <input type="text" placeholder="Username" id="txtUsername" class="redText"> 
+            <input type="password" placeholder="Password" id="txtPassword"  class="redText">
             <div style="margin-top: 1rem;">
                 <button id="btnlogin">Login</button>
             
@@ -17,7 +43,7 @@
 
         </div>
     </body>
-    git
+
     <script>
         // Javascript
         console.log("Hello World");
